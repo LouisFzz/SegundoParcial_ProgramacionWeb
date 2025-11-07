@@ -27,7 +27,7 @@ public class SolicitudController {
  
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public SolicitudListDTO registrar(@RequestBody Map<String, Object> body) {
+    public Map<String, Object> registrar(@RequestBody Map<String, Object> body) {
         return solicitudService.registrarSolicitud(body);
     }
 }
