@@ -43,4 +43,68 @@ public class Solicitud {
     @Size(max = 10)
     @Column(name = "codigo_radicado", length = 10)
     private String codigoRadicado;
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public LocalDate getFecha() {
+		return fecha;
+	}
+
+	public void setFecha(LocalDate fecha) {
+		this.fecha = fecha;
+	}
+
+	public Persona getSolicitante() {
+		return solicitante;
+	}
+
+	public void setSolicitante(Persona solicitante) {
+		this.solicitante = solicitante;
+	}
+
+	public Persona getCodeudor() {
+		return codeudor;
+	}
+
+	public void setCodeudor(Persona codeudor) {
+		this.codeudor = codeudor;
+	}
+
+	public BigDecimal getValor() {
+		return valor;
+	}
+
+	public void setValor(BigDecimal valor) {
+		this.valor = valor;
+	}
+
+	public Estado getEstado() {
+		return estado;
+	}
+
+	public void setEstado(Estado estado) {
+		this.estado = estado;
+	}
+
+	public String getObservacion() {
+		return observacion;
+	}
+
+	public void setObservacion(String observacion) {
+		this.observacion = observacion;
+	}
+
+	public String getCodigoRadicado() {
+		return codigoRadicado;
+	}
+
+	public void setCodigoRadicado(String codigoRadicado) {
+		this.codigoRadicado = codigoRadicado;
+	}
 }
